@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 300vh;
+  background-color: #f1f1f1;
+}
+
+a,
+a:visited,
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.content-wrapper {
+  max-width: 90%; /*Responsive approach*/
+  margin: auto;
+}
+
+.content-wrapper-style {
+  position: relative;
+  width: 100%;
+  margin: 20px auto;
+  padding-left: 10px;
+  background-color: #fff;
+  border: 1px solid #dddddc;
+  border-left: 7px solid #5225bd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.chapter-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.class-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 15px 10px 20px 20px;
+}
+
+.class-container:hover {
+  background-color: #5225bd;
+  color: #fff;
+}
+
+.view-more {
+  color: #5225bd;
+  text-align: center;
+}
+
+.class-container:hover,
+.view-more:hover {
+  cursor: pointer;
+}
+
+.class-progress {
+  width: 50px;
+  height: 20px;
+  padding: 5px;
+  margin-right: 5px;
+  text-align: center;
+  background-color: green;
+  box-shadow: 2px 2px 3px 0 black;
+  color: #fff;
+}
+
+/* Position */
+
+div.box {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+.red {
+  position: relative;
+  top: 0;
+  background-color: red;
+}
+
+.blue {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50%;
+  background-color: blue;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.green {
+  background-color: green;
+}
+
+/* Ejercicio posicionamiento */
+.search-bar {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  margin-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  background-color: #3f334c;
+  border-radius: 25px;
+}
+
+.cancel-btn {
+  display: inline-block;
+  position: relative;
+  width: 75px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  right: 30px;
+  text-align: center;
+  background-color: #de2668;
+  border-radius: 50%;
+}
+
+span.search-bar {
+  font-weight: 500;
+  color: #908998;
+}
+
+span.cancel-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+}
+
+.sample-container {
+  width: 50%;
+  margin: 30px auto;
+}
