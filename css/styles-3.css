@@ -2,6 +2,7 @@
 
 :root {
   --content-height: 100vh;
+  --footer-text-color: #c9d1d9;
 }
 
 * {
@@ -100,34 +101,44 @@ a:link {
 
 /* Footer */
 footer {
-  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
   flex-shrink: 0;
-  position: relative;
-  color: #c9d1d9;
-  background-color: #1456b3;
-  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer-greeting {
+footer a {
+  color: var(--footer-text-color);
+}
+
+.footer {
+  position: relative;
+  padding: 10px;
+  color: var(--footer-text-color);
+  background-color: #161b22;
+}
+
+.footer-content {
   text-align: center;
   letter-spacing: 0.1rem;
 }
 
-footer a {
-  color: #c9d1d9;
+.footer-content a:hover {
+  text-shadow: 2px 2px 9px #fff;
 }
 
-/* Animations */
-.logo {
+.footer-logo {
   position: absolute;
   right: 0;
-  bottom: 0;
+  margin-right: 15px;
   z-index: 1;
   cursor: pointer;
 }
 
-.logo img {
-  width: 175px;
+/* Animations */
+.footer-logo i {
+  font-size: 50px;
   animation-name: spin;
   animation-duration: 2s;
   animation-delay: 2s;
@@ -174,18 +185,17 @@ footer a {
   }
 
   footer {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
   }
 
-  .logo {
+  .footer-content {
+    width: 50%;
+    margin: auto;
+  }
+
+  .footer-logo {
     position: static;
-  }
-
-  .logo img {
-    width: 75px;
+    order: 1;
   }
 
   @keyframes spin {
@@ -197,9 +207,3 @@ footer a {
     }
   }
 }
-
-/* CURRENT BUGS 
-
-1- Background not covering the whole viewport when vh > 100
-2- Logo is not positioned properly when desktop viewport
-*/
